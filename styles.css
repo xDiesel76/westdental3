@@ -1,0 +1,219 @@
+#title {
+  background: linear-gradient(rgba(38, 50, 56, 0.3) 10%, rgba(38, 50, 56, 0.3)),
+    url(img/dental.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: gray;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #49515a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #49515a;
+}
+
+/* NavBar */
+.nav-link {
+  font-size: 1.25em;
+  font-family: 'Sen', sans-serif;
+}
+
+.navbar-brand {
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+  font-size: 2em;
+  font-family: 'Sen', sans-serif;
+}
+
+/* Title / Cover */
+
+.title-header {
+  color: white;
+  text-align: left;
+  margin-top: 7em;
+  font-family: 'Sen', sans-serif;
+  margin-left: 7%;
+  margin-right: 7%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 600px) {
+  .title-header {
+    margin-top: 13em;
+    margin-left: 12%;
+    margin-right: auto;
+  }
+}
+
+.title-header-line {
+  width: 100px;
+  margin: 1.2em 0 2em 0;
+  border-width: 30px;
+  border-top: 2px white solid;
+}
+
+.title-header-main {
+  font-size: 4.5em;
+  font-weight: 700;
+}
+
+.title-header-location {
+  font-size: 2em;
+}
+
+.title-header-sub {
+  font-weight: 700;
+  font-size: 2em;
+}
+
+/* Info */
+#info {
+  margin: 5em 2em;
+}
+
+.info-intro {
+  font-family: 'Amiri', serif;
+  font-weight: 600;
+}
+
+.office {
+  width: 100%;
+  display: block;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info-dental {
+  margin-bottom: 2em;
+  font-family: 'Sen', sans-serif;
+  font-size: 1em;
+}
+
+.info-line {
+  width: 100px;
+  margin: 1.2em 0 2em 0;
+  border-width: 30px;
+  border-top: 2px black solid;
+}
+
+@media screen and (min-width: 600px) {
+  .office {
+    width: 85%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #info {
+    margin: 7em 5em 7em 7em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "info image";
+    align-items: center;
+  }
+
+  .info-all {
+    grid-area: info;
+    margin-right: 4em;
+  }
+
+  .office {
+    grid-area: image;
+    width: 100%;
+  }
+}
+
+
+/* Testimonials */
+#demo {
+    max-width: 1250px;
+    margin: auto
+}
+
+.testimonials-intro {
+  font-family: 'Amiri', serif;
+  font-weight: 600;
+  text-align: center;
+}
+
+.testimonials-line {
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  border-width: 30px;
+  border-top: 2px black solid;
+}
+
+.carousel-caption {
+    position: initial;
+    z-index: 10;
+    padding: 5rem 8rem;
+    font-family: 'Sen', sans-serif;
+    color: rgba(78, 77, 77, 0.856);
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2rem
+}
+
+@media(max-width:767px) {
+    .carousel-caption {
+        position: initial;
+        z-index: 10;
+        padding: 3rem;
+        color: rgba(78, 77, 77, 0.856);
+        text-align: center;
+        font-size: 1rem;
+        line-height: 1.5rem
+    }
+}
+
+i {
+    background-color: rgb(223, 56, 89);
+    padding: 1.4rem
+}
+
+@media(max-width:767px) {
+    i {
+        padding: 0.8rem
+    }
+}
+
+.carousel-control-prev {
+    justify-content: flex-start
+}
+
+.carousel-control-next {
+    justify-content: flex-end
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    transition: none;
+    opacity: unset
+}
+
+/* Footer */
+#footer {
+  text-align: center;
+  background-color: #343A40;
+  color: white;
+  padding: 2em;
+}
